@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Menu{
+
+private ArrayList<MenuItem> menuItems = new ArrayList<>();
+private Date lastUpdated;
+
+public menu(){
+this. lastUpdated = newDate ();
+}
+public ArrayList<MenuItem> getMenuItem() {return this.menuItems;)}
+public void setMenuItems(ArrayList<MenuItem> menuItems) {this.menuItems = menuItems;}
+
+public Date getLastUpdated(){return this.lastUpdated;}
+public void setLastUpdated{Date lastUpdated) {this.lastUpdated = lastUpdated;}
+
+}
