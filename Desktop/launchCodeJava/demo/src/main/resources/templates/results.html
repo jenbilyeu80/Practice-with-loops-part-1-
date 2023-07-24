@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+    <head th:replace="fragments :: head">
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+
+<body>
+<div class="container body-content"></div>
+<form th:action="@{/search/results}" method = "post"></form>
+<h1>Search Results</h1>
+<div>
+    <p>Search By: <strong th:text="${searchForm.searchBy}"></strong></p>
+    <p>Search Term: <strong th:text="${searchForm.searchTerm}"></strong></p>
+
+</div>
+</body>
+</html>
