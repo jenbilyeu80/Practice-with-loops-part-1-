@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0; 
     box-sizing: border-box;
     font-family: "Poppins" , sans-serif;
 }
@@ -28,7 +28,7 @@ body{
     border-radius: 0.6em;
 
 }
-
+ 
 h2{
     font-size: 2em;
     text-align: center;

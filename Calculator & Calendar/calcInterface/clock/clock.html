@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Digital Clock </title>
+        <meta charset="utf-8"> 
+        <title>Digital Clock with Glowing Effect </title>
         <link rel="stylesheet" href="style.css">
  </head>
  <body>
-<div class="hero">
-    <div class="container">
-        <div class="clock">
-            00:00:00
-
-
-
-    </div>
+<div class="wrapper">
+    <div class="display">
+        <div id="time"></div>
+<span></span>
+<span></span>
 </div>
 
-
+<script>
+    setInterval(() =>{
+    const time = document.querySelector("#time");
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let day_night="AM";
+    if(hours > 12){
+        day_night = "PM";
+        hours = hours -12;
+    }
+    if(minutes < 10){
+        minutes = "0" + minutes;
+    }
+    if(seconds < 10){
+        seconds = "0" + seconds;
+    }
+    time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
+    });
+</script>
 </div>
 </body>
 </html>
