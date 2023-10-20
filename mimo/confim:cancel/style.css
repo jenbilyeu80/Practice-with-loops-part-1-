@@ -1,0 +1,8 @@
+div{
+    border: solid 2px #806868;
+    display:flex;
+}
+button{
+    border: 2px solid #457081;
+    margin: 10px;
+}
