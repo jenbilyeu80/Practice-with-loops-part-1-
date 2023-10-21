@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+img{
+    width: 90px;
+    height: auto;
+    margin: 5px;
+}
+
+#images{
+    border: 1px dotted lightgray;
+    max-width: 500px;
+    margin: auto;
+    flex:display;
+    flex-direction: columm;
+    flex-wrap: wrap;
+}
