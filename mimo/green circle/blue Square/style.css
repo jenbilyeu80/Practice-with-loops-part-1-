@@ -1,0 +1,19 @@
+.blue{
+    background-color: blue;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+
+}
+
+#shapes{
+    border: 1px dotted blue;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  
+
+}
