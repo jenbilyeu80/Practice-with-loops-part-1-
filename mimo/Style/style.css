@@ -1,0 +1,36 @@
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.grey-text{
+    color:#616161
+}
+
+.mono{
+    font-family: monospace;
+}
+
+button {
+    width: 40%;
+    margin:5px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: .7em;
+    font-weight: bold;
+    border: 0px solid;
+    outline: none;
+    background-color: D9E8FB;
+    color: #4D4D87;
+}
+
+.row{
+    display:flex;
+}
