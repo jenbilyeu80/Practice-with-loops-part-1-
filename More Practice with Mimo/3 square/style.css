@@ -1,0 +1,21 @@
+div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.plum{
+    background-color: plum;
+    z-index: 3;
+}
+.gold{
+    background-color: gold;
+    top: 40px;
+    left: 80px;
+    z-index: 2;
+}
+.coral{
+    background-color: coral;
+    top: 70px;
+    left: 40px;
+}
