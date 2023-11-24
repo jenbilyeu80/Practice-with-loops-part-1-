@@ -9,3 +9,15 @@ class Car{
 console.log(myCar);
 console.log(oldTimer);
 
+// I like this condition example//
+
+let temperature = 5;
+if (temperature < 0){
+    console.log("Brr...");
+} else if(temperature === 0){
+    console.log("Its freezing!");
+}else if (temperature <10 ) {
+    console.log("Its cold out.");
+}
+
+
