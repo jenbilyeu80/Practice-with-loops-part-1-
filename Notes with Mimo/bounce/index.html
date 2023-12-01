@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+        <style>
+            p{
+                font-size: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <script src = "https://teach.getmimo.com/bouncy.js"></script>
+        <div>
+            <p id="bounceText">Bounce</p>
+        </div>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            @keyframes bounce {
+                0% { margin-top: 0; }
+                50% { margin-top: 100px; }
+                100% { margin-top: 0; }
+            }
+
+            #bounceText {
+                font-size: 30px;
+                animation: bounce 2s infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p id="bounceText">Bounce</p>
+        </div>
+    </body>
+</html>
