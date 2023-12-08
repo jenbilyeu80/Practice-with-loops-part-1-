@@ -9,4 +9,3 @@ function share(){
 
 }
 
-paragraph.innerHTML = img
