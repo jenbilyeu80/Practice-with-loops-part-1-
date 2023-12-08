@@ -8,3 +8,5 @@ function share(){
     posts.innerHTML = posts.innerHTML + username + ":" + postText;
 
 }
+
+paragraph.innerHTML = img
