@@ -1,5 +1,6 @@
-function toggleDarkMode(){
+
+function colView(){
     const el=
-    document.querySelector("body");
-    el.classList.toggle("darkMode");
+    document.querySelector("div");
+    el.classList.remove("grid");
 }
