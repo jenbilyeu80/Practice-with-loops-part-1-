@@ -171,3 +171,17 @@ while reminder_count < 3:
 
   for item in shopping_list:
    print(f"Dont forget to buy {item}!")
+
+# We have a monthley tournament and we recorded the champion's name in the chamions list.  Recently, we found oyt that a regular participant "Tooti3" was cheating.  
+  #  We have to check if "Tooti3" has won any tournamnets and remove him from the list.  Find out how many times "Tooti3" appears in the champions list using 
+  #  count() then print the result in the console. 
+   
+   champions = ["Miracle+", "Tooti3", "Orustat", "Emkay", "mizuhuana", "diabian", "Cyle", "Tooti3", "Flaker"]
+   result=champions.count("Tooti3")
+   print(result)
+
+  #  Joe records how much money he saved every month in a list called savings.  Help Joe calculate his total savings for the year using sum()
+  #  and print the result in the console
+   
+   savings=[122, 50, 102, 103, 79, 46, 107, 9, 13, 91, 193, 4]
+   print(sum(savings))
