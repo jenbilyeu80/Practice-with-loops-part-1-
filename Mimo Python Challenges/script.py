@@ -172,6 +172,7 @@ while reminder_count < 3:
   for item in shopping_list:
    print(f"Dont forget to buy {item}!")
 
+
 # We have a monthley tournament and we recorded the champion's name in the chamions list.  Recently, we found oyt that a regular participant "Tooti3" was cheating.  
   #  We have to check if "Tooti3" has won any tournamnets and remove him from the list.  Find out how many times "Tooti3" appears in the champions list using 
   #  count() then print the result in the console. 
@@ -185,3 +186,29 @@ while reminder_count < 3:
    
    savings=[122, 50, 102, 103, 79, 46, 107, 9, 13, 91, 193, 4]
    print(sum(savings))
+
+   new_cars="ford Honda volvo bug"
+   cars_list = new_cars.split()
+   print(cars_list)
+
+names="Jennifer steve Dakotah Chase"
+names_list=names.split()
+print (names_list)
+
+# A school teacher wants to create a list with all the student's name in his class.  He received a long string 
+# containing all the names, each name separated by a comma ,. Help him create a names_list 
+# that stores the individual names separated by a comma. Then print the list. 
+
+student_names = "Samantha, Mcgrath, Peyton, Kerim, Nadia, Sandra, Sarah, Alex"
+names_list= student_names.split(",")
+print(names_list)
+
+# You work as a software developer and you decide to use a specific set of programming technologies
+# for your next application.  In a last minute request from the client, you agreed to use React instead of Angular.
+# 1. Re-assign tech_stack and use a string operation to replace"Angular" with "React".
+# 2. Create a tech_stack_list variable that stores the names from tech_stack as a list.
+# 3. Print tech_stack_list
+tech_stack ="Angular Node Mongo Express"
+tech_stack = tech_stack.replace("Angular", "React")
+tech_stack_list=tech_stack.split()
+print(tech_stack_list)
