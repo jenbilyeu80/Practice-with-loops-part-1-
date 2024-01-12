@@ -187,10 +187,6 @@ while reminder_count < 3:
    savings=[122, 50, 102, 103, 79, 46, 107, 9, 13, 91, 193, 4]
    print(sum(savings))
 
-   new_cars="ford Honda volvo bug"
-   cars_list = new_cars.split()
-   print(cars_list)
-
 names="Jennifer steve Dakotah Chase"
 names_list=names.split()
 print (names_list)
@@ -212,3 +208,71 @@ tech_stack ="Angular Node Mongo Express"
 tech_stack = tech_stack.replace("Angular", "React")
 tech_stack_list=tech_stack.split()
 print(tech_stack_list)
+
+def get_final_price(price,tax):
+ return price + tax
+price = get_final_price(30, 1.5)
+print(price)
+
+# You're building a web application for a restaurant that calculates the total price of an item after tax.
+# 1. Complete the calculate_tax function that takes a specific price and updates it with an added tax of 10%
+# 2.  Make sure to return the updated price after the calculation. 
+def calculate_tax(price):
+ price += price * 0.1
+ return price
+# You're going for a quick swim in the pool but you can't stand cold water.  Let's make sure the water 
+# temperature is suitable for swimming!
+def can_swim(temperature):
+ if temperature > 30:
+  return True
+ else:
+  return False
+ 
+#  It's your birthday and your friends decided to gift you some money.  They added the money in a jar and add them together, and return the total sum.
+ def calculate_total(jar):
+  sum =0
+  for money in jar:
+   sum += money
+   return sum
+  #  A DVD rental shop wants to update its website with a header that lists their top-selling movies.
+  # 1. Create a new variable new_top_movies that replaces the value "Trapped" from old_top_movies
+  # with "Moonfall".  Bear in mind that these titles are case-sensitivo.
+  # 2. Print the new list. 
+
+   old_top_movies = "The Power of the Dog - Trapped - Tenet"
+   new_top_movies = old_top_movies.replace("Trapped", "Moonfall")
+   print(new_top_movies)
+# ******************************************************************************************
+# Tuples, Dictionaries, and Sets
+
+# 1. We need to create a list of art supplies so that artists have everything they need to paint! 
+#    Use the correct syntax to define a tuple comprised of "paint brush", "paint", and "canvae"
+   
+  #   my answer:
+  #  art_supplies ("paint brush", "paint", "canvae")
+   
+# 2. We need to complete the state park dictionary to let users know what activities are available at the park.
+  #  For activities, and an immutable list which includes "hiking", and "fishing".
+   
+  # my answer: 
+    # state_park_dict= {
+    # "name": "Starved Rock", 
+    # "location": "Illinois", 
+    # "canyons": True,
+    # "activities": ("hiking", "fishing")
+    # }
+   
+# 3. Campers need to know what camp gear is recommended for a trip!
+  #  1. Check if there is a key within the dictionary for camp kitchen gear.
+  #  2. Save the value to a kitchen_items varibale.
+  
+  # my answer:
+
+   recommended_camp_gear ={
+    "clothes": ("Rain jacket", "Hiking boots"),
+    "camp_kitchen": ("Portable stove", "frying pan")
+   }
+   kitchen_items = "camp_kitchen" in recommended_camp_gear
+   print(kitchen_items)
+   
+    
