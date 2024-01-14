@@ -113,3 +113,74 @@ bud= Pet("Bud", "Labrador", "Dog","Brown")
 daisy =Pet("Daisy","Burmese", "Cat", "Grey")
 print(f"{rio.name} is a {rio.color} colored {rio.family} {rio.animal_type}")
 
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# object-oriented Programming
+
+# 1.
+# This elevator is telling the people that it's moving, but in reality it always stay on the same floor.  
+# 1. Update the current floor property so that the elevator moves wheneverit's called to do so.
+
+class Elevator:
+
+    def __init__(self):
+          self.current_floor = 0
+       
+    def go_to_floor(self, floor):
+        if self.current_floor == floor:
+            print(f"Elevator is in floor {floor}")
+        else:
+            print(f"Going to floor {floor}")
+            self.current_floor = floor 
+   
+elevator = Elevator()
+elevator.go_to_floor(3)
+elevator.go_to_floor(3)
+
+# ****************************************************************************************************************************************************
+# 2.
+# Coffee machines can make a limited amount of coffee types. 1. Check if the coffee_type is valid for our machine and store the result in the variable 
+# is_valid_coffee_type.
+
+class CoffeeMachine:
+
+    def __init__(self):
+        self.coffee_options = {"Capuccino", "Espresso"}
+    def make_coffee(self, coffee_type):
+        is_valid_coffee_type = coffee_type in self.coffee_options
+        if is_valid_coffee_type:
+            return f"{coffee_type} made!"
+        else:
+            return f"{coffee_type} is not a valid option!"
+        
+machine = CoffeeMachine()
+print(machine.make_coffee("Espresso"))
+print(machine.make_coffee("Moka"))
+
+#*****************************************************************************************************************************************************
+
+# 3.
+# Castles can be made out of different materials, help us describe the class WoodCastle.
+# 1.  reate the appropriate method to describe WoodCastle.
+
+class Castle:
+
+    def description(self):
+        return "This is a generic castle."
+     
+class StoneCastle(Castle):
+    def description(self):
+        return "This is a stone castle."
+
+class WoodCastle (Castle):
+    def description(self):
+        return "This is a wood castle."
+
+stone_castle = StoneCastle()
+stone_castle_description = stone_castle.description()
+print(stone_castle_description)
+    
+wood_castle = WoodCastle()
+wood_castle_description = wood_castle.description()
+print(wood_castle_description)
+    
