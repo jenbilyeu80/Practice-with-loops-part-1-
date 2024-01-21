@@ -1,0 +1,14 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    padding:40px;
+    box-sizing: border-box;
+}
+input{
+    border:none;
+    background-color: lightgray;
+    padding: 8px 16 px, 8px, 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
