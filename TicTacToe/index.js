@@ -41,17 +41,3 @@ options[index] = currentPlayer;
 cell.textContent = currentPlayer;
 
 }
-
-function changePlayer(){
-    currentPlayer = (currentPlayer == "X") ? "O" : "X";
-    statusText.textContent =`${changePlayer}'s turn`;
-
-}
-
-function checkWinner(){
-
-}
-
-function restartGame(){
-
-}
